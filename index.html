@@ -161,7 +161,7 @@ function type(el,t,cb){var i=0;(function s(){el.textContent=t.slice(0,++i);if(i<
 $('seal').addEventListener('click',function(){if(opened)return;opened=true;$('cv').classList.add('go');
  try{au.volume=0;var pr=au.play();if(pr&&pr.catch)pr.catch(function(){});var v=0,f=setInterval(function(){v=Math.min(.6,v+.03);au.volume=v;if(v>=.6)clearInterval(f)},150);mb.style.display='block';mb.textContent='❚❚'}catch(e){}
  petals(24,PC);document.body.classList.remove('lock');setTimeout(function(){$('cv').style.display='none'},1600);
- setTimeout(function(){type($('n1'),'Shahid Aqheel',function(){setTimeout(function(){type($('n2'),'Fathima Thansin')},500)})},900)});
+ setTimeout(function(){type($('n1'),'Fathima Thansin. A',function(){setTimeout(function(){type($('n2'),'Shahid Aqheel. S')},500)})},900)});
 mb.onclick=function(){if(au.paused){au.play();mb.textContent='❚❚'}else{au.pause();mb.textContent='♪'}};
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.2});
 document.querySelectorAll('.rv').forEach(function(e,i){e.style.transitionDelay=(i%4)*.12+'s';io.observe(e)});
